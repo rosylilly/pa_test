@@ -10,3 +10,11 @@ $ bin/rake test
 ```
 
 で再現。
+
+## 作業内容
+
+- `rails new pa_test`
+- `minitest-power_assert` を Gemfile に追加
+- `bin/rails g model Tea name:string`
+- `validates :name, presence: true` を `app/model/tea.rb` に追加
+- `test/model/tea_test.rb` の中身を書いた
